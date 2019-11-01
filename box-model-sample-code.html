@@ -5,10 +5,16 @@
 	<title>Lesson Four: Box Model Activity</title>
 	<style>
 	/*Add CSS style here using the cats class*/
-    .cats {
-      width="500px";
-      background-color: grey;
-      font-size: 30px;
+    .content-box {
+      height: 5em;
+      width: 5em;
+      padding: 4em;
+      border-width: 1em;
+      border: 1em solid black;
+      margin: 1em;
+    }
+    #border-box {
+      box-sizing: border-box;
     }
      </style>
   </head>
@@ -21,11 +27,15 @@
 
   	<section>
     	<h1>A section</h1>
-    	<article class="cats">
+    	<article class="content-box">
       	<a href="#link">A Link</a>
       	<p>A paragraph</p>
     	</article>
   	</section>
+      <article class="content-box" id="border-box">
+        <a href="#link">A Link</a>
+      	<p>A paragraph</p>
+      </article>
 
   	<footer>
   	</footer>
